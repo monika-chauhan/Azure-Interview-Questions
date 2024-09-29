@@ -82,3 +82,4 @@ Answer : Azure Data Factory's Integration Runtime (IR) is the compute infrastruc
         1.Azure Integration Runtime :-> Managed by Microsoft, this IR can only access data stores and services in public networks.
         2.Self-Hosted Integration Runtime :-> This IR uses infrastructure and hardware managed by the user, and can access resources in both public and private networks.
         3.Azure-SSIS Integration Runtime :-> Managed by Microsoft, this IR can access resources in both public and private networks.
+
