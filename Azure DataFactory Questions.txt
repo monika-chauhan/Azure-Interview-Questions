@@ -15,13 +15,19 @@ Answer : Azure Data Factory supports various types of activities including :->
         4.Custom activities (e.g., Azure Function, Stored Procedure).
 
 Question 4. How does Azure Data Factory handle data movement between different data stores?
-Answer : Azure Data Factory uses Copy Activity to move data between different data stores. Copy Activity supports a wide range of data sources and destinations, including Azure Blob Storage, Azure SQL Database, Azure Data Lake Storage, SQL Server, and many others
+Answer : Azure Data Factory uses Copy Activity to move data between different data stores. Copy Activity supports a wide range of data 
+sources and destinations, including Azure Blob Storage, Azure SQL Database, Azure Data Lake Storage, SQL Server, and many others
+
 
 Question 5. What is a dataset in Azure Data Factory?
-Answer : A dataset in Azure Data Factory is a named view of data that defines the data structure and location. It represents the input or output data for activities within a pipeline and can be structured, semi-structured, or unstructured data stored in various data stores.
+Answer : A dataset in Azure Data Factory is a named view of data that defines the data structure and location. It represents the input or
+output data for activities within a pipeline and can be structured, semi-structured, or unstructured data stored in various data stores.
+
 
 Question 6. Explain linked services in Azure Data Factory.
-Answer : Linked services in Azure Data Factory define the connection information for data stores, compute resources, and other external services. They establish a connection between Azure Data Factory and the external data sources or destinations.
+Answer : Linked services in Azure Data Factory define the connection information for data stores, compute resources, and other external 
+services. They establish a connection between Azure Data Factory and the external data sources or destinations.
+
 
 Question 7. What is a trigger in Azure Data Factory and how is it used?
 Answer : A trigger in Azure Data Factory is a set of conditions that define when a pipeline should be executed. Triggers can be based on a schedule (e.g., time-based trigger), events (e.g., data arrival trigger), or manual invocation.
@@ -48,41 +54,66 @@ Question 14. Explain the concept of data lineage in Azure Data Factory.
 Answer : Data lineage in Azure Data Factory refers to the tracking and visualization of data movement and transformation processes within data pipelines. It helps users understand the flow of data from source to destination and identify dependencies between different data processing steps.
 
 Question 15. What are the monitoring and logging capabilities available in Azure Data Factory?
-Answer : Azure Data Factory provides monitoring and logging capabilities through Azure Monitor, which allows you to track pipeline execution, monitor performance metrics, view execution logs, and set up alerts for pipeline failures or performance issues.
+Answer : Azure Data Factory provides monitoring and logging capabilities through Azure Monitor, which allows you to track pipeline 
+execution, monitor performance metrics, view execution logs, and set up alerts for pipeline failures or performance issues.
+
 
 Question 16. How can you integrate Azure Data Factory with Azure DevOps for CI/CD?
-Answer : Azure Data Factory can be integrated with Azure DevOps for continuous integration and continuous deployment (CI/CD) workflows. You can use Azure DevOps pipelines to automate the deployment of Azure Data Factory artifacts such as pipelines, datasets, and linked services.
+Answer : Azure Data Factory can be integrated with Azure DevOps for continuous integration and continuous deployment (CI/CD) workflows. You
+can use Azure DevOps pipelines to automate the deployment of Azure Data Factory artifacts such as pipelines, datasets, and linked services.
+
 
 Question 17. What are the security features available in Azure Data Factory?
-Answer : Azure Data Factory provides various security features including role-based access control (RBAC), encryption at rest and in transit, network security, data masking, data encryption, and integration with Azure Active Directory for authentication and authorization.
+Answer : Azure Data Factory provides various security features including role-based access control (RBAC), encryption at rest and in 
+transit, network security, data masking, data encryption, and integration with Azure Active Directory for authentication and authorization.
+
 
 Question 18. Explain the concept of Data Flows in Azure Data Factory.
-Answer : Data Flows in Azure Data Factory provide a code-free visual interface for building and executing data transformation logic using a series of transformation components such as source, sink, join, aggregate, and derive. Data Flows can handle complex data transformation tasks at scale.
+Answer : Data Flows in Azure Data Factory provide a code-free visual interface for building and executing data transformation logic using a
+series of transformation components such as source, sink, join, aggregate, and derive. Data Flows can handle complex data transformation 
+tasks at scale.
 
 Question 19. What are the deployment options available for Azure Data Factory?
-Answer : Azure Data Factory supports various deployment options including manual deployment through the Azure portal, automated deployment using Azure DevOps, ARM (Azure Resource Manager) templates, PowerShell scripts, and REST APIs.
+Answer : Azure Data Factory supports various deployment options including manual deployment through the Azure portal, automated deployment
+using Azure DevOps, ARM (Azure Resource Manager) templates, PowerShell scripts, and REST APIs.
+
 
 Question 20. How does Azure Data Factory handle data partitioning and parallelism?
-Answer : Azure Data Factory can partition data and execute activities in parallel to achieve high performance and scalability. It supports partitioning of data based on various factors such as source data distribution, partition key, and target data distribution
+Answer : Azure Data Factory can partition data and execute activities in parallel to achieve high performance and scalability. It supports
+partitioning of data based on various factors such as source data distribution, partition key, and target data distribution
+
 
 Question 21. What is the difference between Azure Data Factory and Azure Databricks?
-Answer : Azure Data Factory is a cloud-based data integration service for orchestrating and automating data workflows, whereas Azure Databricks is a unified analytics platform for processing and analyzing large volumes of data using Apache Spark.
+Answer : Azure Data Factory is a cloud-based data integration service for orchestrating and automating data workflows, whereas Azure 
+Databricks is a unified analytics platform for processing and analyzing large volumes of data using Apache Spark.
+
 
 Question 22. How can you monitor and optimize the performance of Azure Data Factory pipelines?
-Answer : You can monitor and optimize the performance of Azure Data Factory pipelines by analyzing pipeline execution metrics, identifying bottlenecks, optimizing data movement and transformation logic, tuning Azure Integration Runtime configurations, and using performance optimization techniques.
+Answer : You can monitor and optimize the performance of Azure Data Factory pipelines by analyzing pipeline execution metrics, identifying
+bottlenecks, optimizing data movement and transformation logic, tuning Azure Integration Runtime configurations, and using performance 
+optimization techniques.
 
 Question 23. What are the best practices for designing Azure Data Factory pipelines?
-Answer : Some best practices for designing Azure Data Factory pipelines include using parameterization for flexibility, modularizing pipelines for reusability, optimizing data movement and transformation logic, using parallelism for scalability, and implementing error handling and retry mechanisms.
+Answer : Some best practices for designing Azure Data Factory pipelines include using parameterization for flexibility, modularizing 
+pipelines for reusability, optimizing data movement and transformation logic, using parallelism for scalability, and implementing error 
+handling and retry mechanisms.
 
 Question 24. How does Azure Data Factory handle incremental data loading?
-Answer : Azure Data Factory can handle incremental data loading by using watermark columns, change tracking mechanisms, or date/time-based filters to identify new or updated data since the last data load. This allows you to efficiently load only the changed or new data into the destination.
+Answer : Azure Data Factory can handle incremental data loading by using watermark columns, change tracking mechanisms, or date/time-based
+filters to identify new or updated data since the last data load. This allows you to efficiently load only the changed or new data into the
+destination.
 
 Question 25. What are the different pricing tiers available for Azure Data Factory?
-Answer : Azure Data Factory offers different pricing tiers including Free, Standard, and Premium tiers. The pricing is based on factors such as data integration units (DIUs), data flow units (DFUs), and data movement units (DMUs) consumed by the pipelines.
+Answer : Azure Data Factory offers different pricing tiers including Free, Standard, and Premium tiers. The pricing is based on factors
+such as data integration units (DIUs), data flow units (DFUs), and data movement units (DMUs) consumed by the pipelines.
+
 
 Question 26. What are the Azure Data Factory Runtime Integrations?
-Answer : Azure Data Factory's Integration Runtime (IR) is the compute infrastructure that provides data integration capabilities across different network environments. There are three types of IRs to choose from:
+Answer : Azure Data Factory's Integration Runtime (IR) is the compute infrastructure that provides data integration capabilities across
+different network environments. There are three types of IRs to choose from:
         1.Azure Integration Runtime :-> Managed by Microsoft, this IR can only access data stores and services in public networks.
-        2.Self-Hosted Integration Runtime :-> This IR uses infrastructure and hardware managed by the user, and can access resources in both public and private networks.
+        2.Self-Hosted Integration Runtime :-> This IR uses infrastructure and hardware managed by the user, and can access resources in 
+both public and private networks.
         3.Azure-SSIS Integration Runtime :-> Managed by Microsoft, this IR can access resources in both public and private networks.
+
 
