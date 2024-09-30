@@ -1,8 +1,11 @@
 Question 1. What is Azure Data Factory (ADF) and what are its key components?
-Answer : Azure Data Factory is a cloud-based data integration service that allows you to create, schedule, and manage data pipelines for moving and transforming data from various sources to destinations. Its key components include pipelines, activities, datasets, linked services, triggers, and integration runtimes.
+Answer : Azure Data Factory is a cloud-based data integration service that allows you to create, schedule, and manage data pipelines for 
+moving and transforming data from various sources to destinations. Its key components include pipelines, activities, datasets, linked 
+services, triggers, and integration runtimes.
 
 Question 2. Explain the difference between a pipeline and an activity in Azure Data Factory.
-Answer : A pipeline in Azure Data Factory is a logical grouping of activities that together perform a data processing task. Activities are the processing steps within a pipeline, such as data movement, data transformation, and control flow activities.
+Answer : A pipeline in Azure Data Factory is a logical grouping of activities that together perform a data processing task. Activities are
+the processing steps within a pipeline, such as data movement, data transformation, and control flow activities.
 
 Question 3. What are the different types of activities available in Azure Data Factory?
 Answer : Azure Data Factory supports various types of activities including :->
