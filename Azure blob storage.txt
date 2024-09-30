@@ -93,7 +93,8 @@ protection.
     4.Support for development frameworks: Includes Java, .NET, Python, and Node.js. 
 
 Question 11: What happens if a file gets damaged while you upload it to Azure?
-Answer : If a file is damaged while uploading to Azure, it may not be detected at upload time because Azure Blob does not check the MD5. However, Microsoft Azure Storage Explorer will check the checksum when downloading and fail the download if the file is corrupted. 
+Answer : If a file is damaged while uploading to Azure, it may not be detected at upload time because Azure Blob does not check the MD5. 
+However, Microsoft Azure Storage Explorer will check the checksum when downloading and fail the download if the file is corrupted. 
         Action                   Result
         Undelete a blob          Restores any soft-deleted versions or snapshots, but not the base blob
         Undelete Blob operation  Restores a blob and any soft-deleted snapshots associated with it
