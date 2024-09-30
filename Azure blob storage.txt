@@ -18,12 +18,12 @@ are ideal for scenarios where you need to read and write small sections of a fil
 made up of blocks of data, and can store up to 190.7 TiB of data. They are optimized for sequential IO, and are the most common type of 
 blob. Block blobs can be uploaded in parallel, and each block can be up to 100 MB in size
 
-Question 3: Can we change the types of blb after creations?
+Question 3: Can we change the types of blob after creations?
 Answer : Once a blob is created, its type cannot be changed.
 
 Question 4: Can you use more than one partition for a single table?
 Answer : Yes, you can use more than one partition for a single table. Here are some benefits of using multiple partitions:
-    1. mproved performance: Partitioned tables can improve query performance by reducing the number of bytes read by a query.
+    1. Improved performance: Partitioned tables can improve query performance by reducing the number of bytes read by a query.
     2.Better cost control: Partitioned tables can help control costs by reducing the number of bytes read by a query.
     3.Greater backup flexibility: Creating multiple partitions can provide greater backup flexibility and reduce backup performance impacts.
     4.Improved restoration times: Creating multiple partitions can improve restoration times. 
