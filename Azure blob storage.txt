@@ -1,6 +1,7 @@
 Question1 : What tools can you use to manage Azure Blob Storage?
 Answer : There are several tools you can use to manage Azure Blob Storage, including:
-    1. Azure Storage Explorer :-> A desktop application that lets you manage Azure Storage resources, including blobs, files, queues, and tables. You can use it to upload, download, and manage resources across Azure regions, Azure Stack, and Azure Government.
+    1. Azure Storage Explorer :-> A desktop application that lets you manage Azure Storage resources, including blobs, files, queues, and 
+tables. You can use it to upload, download, and manage resources across Azure regions, Azure Stack, and Azure Government.
     2. Azure PowerShell and CLI :-> You can use these to access Blob Storage data and perform standard storage management tasks. 
     3. Azure DSKs :-> You can use these to access Blob Storage data and integrate it with your application or service
     4. AzCopy :-> A command-line utility that copies files or blobs to or from a storage account. 
@@ -10,8 +11,12 @@ Answer : There are several tools you can use to manage Azure Blob Storage, inclu
 
 Question 2: What is the difference between page blobs and blocks?
 Answer : Page blobs and block blobs are both types of Azure Blob storage, but they are designed for different purposes:
-    1. Page Blobs :-> These are best for storing large, random-access files, like data disks and OS for virtual machines and databases. Page blobs are made up of 512-byte pages, and can store up to 8 TiB of data. They are optimized for random read and write operations, and are ideal for scenarios where you need to read and write small sections of a file without affecting the entire file. 
-    2. Block Blob :-> These are best for storing large amounts of unstructured data, like text, images, videos, and logs. Block blobs are made up of blocks of data, and can store up to 190.7 TiB of data. They are optimized for sequential IO, and are the most common type of blob. Block blobs can be uploaded in parallel, and each block can be up to 100 MB in size
+    1. Page Blobs :-> These are best for storing large, random-access files, like data disks and OS for virtual machines and databases. 
+Page blobs are made up of 512-byte pages, and can store up to 8 TiB of data. They are optimized for random read and write operations, and 
+are ideal for scenarios where you need to read and write small sections of a file without affecting the entire file. 
+    2. Block Blob :-> These are best for storing large amounts of unstructured data, like text, images, videos, and logs. Block blobs are
+made up of blocks of data, and can store up to 190.7 TiB of data. They are optimized for sequential IO, and are the most common type of 
+blob. Block blobs can be uploaded in parallel, and each block can be up to 100 MB in size
 
 Question 3: Can we change the types of blb after creations?
 Answer : Once a blob is created, its type cannot be changed.
@@ -28,8 +33,10 @@ Answer : Yes, you can use more than one partition for a single table. Here are s
 You can use the ADD PARTITION clause to add a new data partition to an existing partitioned table.
 
 Question 5: What type of files can you upload to Azure Blob Storage?
-Answer : You can upload many types of files to Azure Blob Storage, including: Word documents, Excel spreadsheets, Multimedia images, Audio files, and Video files. 
-        Azure Blob Storage is a cloud-based object storage solution that's designed to store unstructured data. It's used for a variety of purposes, including: 
+Answer : You can upload many types of files to Azure Blob Storage, including: Word documents, Excel spreadsheets, Multimedia images, Audio
+files, and Video files. 
+        Azure Blob Storage is a cloud-based object storage solution that's designed to store unstructured data. It's used for a variety of
+purposes, including: 
             1.Serving images and documents directly to a browser 
             2.Storing files for distributed access 
             3.Streaming video and audio 
@@ -40,15 +47,18 @@ You can connect to Azure Blob Storage using Power Apps, .NET, or the SSH File Tr
 Question 6: What types of data can you store in Azure Blob Storage?
 Answer : Azure Blob Storage is a Microsoft Azure service that can store large amounts of unstructured data, such as:
         text, binary data, images, videos, documents, and logs. 
-    Azure Blob Storage is a cost-effective and scalable storage service that can be used to serve documents and images directly to a browser.
+    Azure Blob Storage is a cost-effective and scalable storage service that can be used to serve documents and images directly to a 
+browser.
 
 Question 7: How can you identify a recently modified file?
-Answer : One way to find the last recent blob in Azure Storage Container is to traverse through all the blobs and sort the results in Descending Order using the Last Modified timestamp value.
+Answer : One way to find the last recent blob in Azure Storage Container is to traverse through all the blobs and sort the results in 
+Descending Order using the Last Modified timestamp value.
 
 Question 8: What is the maximum file size allowed for uploads?
 Answer : The maximum file size for upload in Azure Blob Storage depends on the upload method used:
         1.Put Blob: The maximum file size is 5 GiB.
-        2.Put Blob From URL: This method allows you to use any object that can be retrieved using a standard GET HTTP request on a given URL.
+        2.Put Blob From URL: This method allows you to use any object that can be retrieved using a standard GET HTTP request on a given 
+URL.
         3.Copy Blob: The maximum file size is 190.7 TiB. 
 The maximum size of a block in a block blob is 4000 MiB, and the maximum size of a block in an append blob is 4 MiB. 
 
@@ -56,20 +66,28 @@ Question 9: What are the advantages of Azure Blob Storage over other alternative
 Answer : Azure Blob Storage has many advantages over other storage options, including: 
     1.Scalability :-> Azure Blob Storage can scale as needed, and is designed for durability with geo-replication. 
     2.Security :-> Azure Blob Storage offers authentication, role-based access control, encryption, and advanced threat protection. 
-    3.Data management :-> Azure Blob Storage offers comprehensive data management, including lifecycle management, policy-based access control, and immutable storage. 
-    4.Cost optimization :-> Azure Blob Storage offers tiered storage for long-term data, and can be scaled up for high-performance computing and machine learning. 
-    5.Integration :-> Azure Blob Storage integrates with other Azure services, such as Azure Functions, Azure Data Factory, and Azure HDInsight. 
-    6.Backup and snapshots :-> Azure Blob Storage offers snapshots and backups, including point-in-time copies of data stored in containers. 
+    3.Data management :-> Azure Blob Storage offers comprehensive data management, including lifecycle management, policy-based access
+control, and immutable storage. 
+    4.Cost optimization :-> Azure Blob Storage offers tiered storage for long-term data, and can be scaled up for high-performance 
+computing and machine learning. 
+    5.Integration :-> Azure Blob Storage integrates with other Azure services, such as Azure Functions, Azure Data Factory, and Azure 
+HDInsight. 
+    6.Backup and snapshots :-> Azure Blob Storage offers snapshots and backups, including point-in-time copies of data stored in 
+containers. 
     7.Versioning :-> Azure Blob Storage offers versioning to maintain historical versions of blobs. 
-    8.Use cases :-> Azure Blob Storage is ideal for use cases such as backing up data, hosting and streaming media, big data analytics, and caching and content delivery. 
+    8.Use cases :-> Azure Blob Storage is ideal for use cases such as backing up data, hosting and streaming media, big data analytics, and
+caching and content delivery. 
 
 Question 10: What are the key components of Azure Blob Storage?
 Answer : The key components of Azure Blob Storage are: 
-    1.Storage account :-> Specifies the namespace for the data, and each object stored in Azure Storage has a unique address linked to this account. 
-    2.Container :-> Acts as a directory that helps manage and establish blobs. A storage account can contain many containers, and a container can store many blobs. 
+    1.Storage account :-> Specifies the namespace for the data, and each object stored in Azure Storage has a unique address linked to this
+account. 
+    2.Container :-> Acts as a directory that helps manage and establish blobs. A storage account can contain many containers, and a 
+container can store many blobs. 
     3.Blob :-> An object in the form of unstructured data, such as images, audio, video, and files.
 Azure Blob Storage also offers a range of features, including: 
-    1.Security: Includes authentication with Microsoft Entra ID, role-based access control (RBAC), encryption at rest, and advanced threat protection. 
+    1.Security: Includes authentication with Microsoft Entra ID, role-based access control (RBAC), encryption at rest, and advanced threat
+protection. 
     2.Data management: Includes end-to-end lifecycle management, policy-based access control, and immutable (WORM) storage. 
     3.Storage tiers: Includes hot, cool, and archive storage tiers for different use cases. 
     4.Support for development frameworks: Includes Java, .NET, Python, and Node.js. 
@@ -79,31 +97,50 @@ Answer : If a file is damaged while uploading to Azure, it may not be detected a
         Action                   Result
         Undelete a blob          Restores any soft-deleted versions or snapshots, but not the base blob
         Undelete Blob operation  Restores a blob and any soft-deleted snapshots associated with it
-A corrupted file is a damaged or incomplete digital document that may not open or work as intended. There are many reasons why a file may become corrupted, including: hardware malfunctions, sudden power outages, software bugs, and malware
+A corrupted file is a damaged or incomplete digital document that may not open or work as intended. There are many reasons why a file may
+become corrupted, including: hardware malfunctions, sudden power outages, software bugs, and malware
 
 Question 12: How does Azure Blob Storage work?
-Answer :  Azure Blob Storage is a service that allows users to store large amounts of data, such as images, videos and documents, in the cloud. You can store blobs in containers that are similar to folders. Each container can store an unlimited number of blobs. Each blob can be up to 4.77 terabytes in size. Users may access blobs via HTTP or HTTPS using a unique URL, and a user can authenticate them using Azure Active Directory or a shared access signature. Azure Blob Storage also supports versioning, data tiering and archiving, which helps optimise storage costs and data durability.
+Answer :  Azure Blob Storage is a service that allows users to store large amounts of data, such as images, videos and documents, in the 
+cloud. You can store blobs in containers that are similar to folders. Each container can store an unlimited number of blobs. Each blob can
+be up to 4.77 terabytes in size. Users may access blobs via HTTP or HTTPS using a unique URL, and a user can authenticate them using Azure
+Active Directory or a shared access signature. Azure Blob Storage also supports versioning, data tiering and archiving, which helps 
+optimise storage costs and data durability.
 
 Question 13: Can you explain what object storage is in relation to Azure Blob Storage?
-Answer : An object store is a data storage system designed to store, manage and retrieve data. This data can include images, videos and documents. They typically provide a simple key-value interface that assigns each object a unique key and associated metadata that a user can use to store and retrieve the object.
+Answer : An object store is a data storage system designed to store, manage and retrieve data. This data can include images, videos and 
+documents. They typically provide a simple key-value interface that assigns each object a unique key and associated metadata that a user 
+can use to store and retrieve the object.
 
 Question 14: What are the benefits of Azure Blob Storage?
-Answer : An object store like Azure Blob storage has several key benefits, such as high scalability and durability. It also offers low costs for storing and retrieving large amounts of data. Object stores often provide built-in data tiering and archiving capabilities, which can help to optimise storage costs and ensure that it protects the data from loss due to hardware failures, software bugs or other issues.
+Answer : An object store like Azure Blob storage has several key benefits, such as high scalability and durability. It also offers low 
+costs for storing and retrieving large amounts of data. Object stores often provide built-in data tiering and archiving capabilities, which
+can help to optimise storage costs and ensure that it protects the data from loss due to hardware failures, software bugs or other issues.
+
 
 Question 15: Can you use Azure Blob Storage before installing software?
-Answer : It is not necessary to install any software first. You can interact with Azure Blob Storage using Azure Storage SDKs, Azure PowerShell, Azure CLI or the Azure Storage REST API. These tools allow you to create, manage and access your Azure Blob Storage account and its data.
+Answer : It is not necessary to install any software first. You can interact with Azure Blob Storage using Azure Storage SDKs, Azure 
+PowerShell, Azure CLI or the Azure Storage REST API. These tools allow you to create, manage and access your Azure Blob Storage account and
+its data.
 
 Question 16: What are blob tiers in Azure Blob Storage?
-Answer : A blob tier refers to the storage performance and cost associated with a specific type of blob. Azure Blob storage offers several blob tiers. 
+Answer : A blob tier refers to the storage performance and cost associated with a specific type of blob. Azure Blob storage offers several
+blob tiers. 
     1.The hot tier is optimised for frequently accessed data, or that which is accessed at least once a month, with the lowest storage cost.
     2.The cool tier is optimised for infrequently accessed data, or that which is accessed less than once a month, and has a higher storage cost than the hot tier. 
     3.The archive tier is optimised for long-term data retention, or that which is accessed less than once a year, and has the highest storage cost.
 
 Question 17: What happens when you transition data to the archive tier?
-Answer :  When you transition data to the archive tier, the system moves the data to a lower-cost storage option designed for long-term retention. Its purpose is to store data you plan to access infrequently, making it the lowest-cost storage option. Data in the archive tier is no longer immediately available for read or write operations. The system transitions the data back to the hot or cool tier to access it. This is the rehydration process, and it may take several hours to complete.
+Answer :  When you transition data to the archive tier, the system moves the data to a lower-cost storage option designed for long-term 
+retention. Its purpose is to store data you plan to access infrequently, making it the lowest-cost storage option. Data in the archive tier
+is no longer immediately available for read or write operations. The system transitions the data back to the hot or cool tier to access it.
+This is the rehydration process, and it may take several hours to complete.
 
 Question 18: How does the rehydration process work?
-Answer: The rehydration process refers to restoring a previously frozen, or cool, tier blob to the hot storage tier. You can do this by accessing the blob or changing its properties. The duration of the process depends on the blob size and the rate at which the system can read it from cold storage. The user cannot modify or delete the blob until the rehydration process is complete because, until that time, it is read-only. As this process takes time and costs extra money, it is recommended that you use it only infrequently.
+Answer: The rehydration process refers to restoring a previously frozen, or cool, tier blob to the hot storage tier. You can do this by 
+accessing the blob or changing its properties. The duration of the process depends on the blob size and the rate at which the system can 
+read it from cold storage. The user cannot modify or delete the blob until the rehydration process is complete because, until that time, it
+is read-only. As this process takes time and costs extra money, it is recommended that you use it only infrequently.
 
 Question 19 : What are the Azure Storage types?
 Answer : Windows Azure Storage provides the infrastructure to store data. There are four main types: 
